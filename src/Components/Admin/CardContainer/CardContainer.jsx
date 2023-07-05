@@ -33,7 +33,7 @@ const CardContainerAdmin = () => {
 
 
   useEffect(() => {
-    EventServices.getAllActive(page).then((info) => {
+    EventServices.getAll(page).then((info) => {
       setData(info);
       
     });

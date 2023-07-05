@@ -7,6 +7,7 @@ import Register from "../Pages/NoAuth/Register";
 import CheckEmail from "../Pages/NoAuth/CheckEmail";
 import Verify from "../Pages/NoAuth/Verify";
 import SuccessVerify from "../Pages/NoAuth/successVerify";
+import EventInfo from "../Pages/NoAuth/EventInfo";
 const AuthRouter = () =>{
     return (
         <Routes>
@@ -16,6 +17,7 @@ const AuthRouter = () =>{
             <Route path="/success" element={<CheckEmail />}></Route>
             <Route path="/verify/:UUID" element={<Verify />}></Route>
             <Route path="/verify/success" element={<SuccessVerify />}></Route>
+            <Route path="/Event/:idEvent" element={<EventInfo />}></Route>
 
         </Routes>
     )

@@ -5,7 +5,25 @@ const url = "https://162.243.162.41"
 const EventServices = () => {}
 
 
-EventServices.getAllActive = async (page) => {
+
+EventServices.getAllActives = async (page) => {
+
+
+
+  try{
+    const response = await axios.get(`${url}/guest/event/get-all-active?page=${page}`,   {
+      
+      
+      
+      }) 
+      
+      
+    return response.data
+}catch(error){
+    throw error
+}
+}
+EventServices.getAll = async (page) => {
 
 
 
@@ -26,6 +44,23 @@ EventServices.getAllActive = async (page) => {
 }
 
 EventServices.getOne = async (params) => {
+    try{
+        const response = await axios.get(`${url}/guest/event/get-one/${params}`,   {
+          
+          headers: {
+            'Authorization': 'Bearer ' + localStorage.getItem("token")
+          }
+          
+          }) 
+          
+          
+        return response.data
+    }catch(error){
+        
+    }
+
+}
+EventServices.getOneNoAuth = async (params) => {
     try{
         const response = await axios.get(`${url}/guest/event/get-one/${params}`,   {
           

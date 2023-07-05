@@ -1,7 +1,7 @@
 import React from "react";
 import Footer from "../../Components/User/Footer/Footer";
 import Navbar from "../../Components/User/Navbar/Navbar";
-import CardContainer from "../../Components/User/CardContainer/CardContainer";
+import CardContainer from "../../Components/NoAuth/CardContainer/CardContainer";
 import Title from "../../Components/User/Title/Title";
 import NoAuthNavbar from "../../Components/NoAuth/NoAuthNavbar/NoAuthNavbar";
 const url = "./src/Data/Events.json";
@@ -21,7 +21,7 @@ const title="Next Events"
     <section className="bg-backgroundicons bg-repeat">
       <NoAuthNavbar/>
       <Title title={title}/>
-      
+      <CardContainer />
       <Footer />
     </section>
   );
