@@ -21,7 +21,7 @@ const title="Next Events"
     <section className="bg-backgroundicons bg-repeat">
       <NoAuthNavbar/>
       <Title title={title}/>
-      <CardContainer />
+      
       <Footer />
     </section>
   );
