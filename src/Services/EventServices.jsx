@@ -209,16 +209,14 @@ EventServices.getTiersByEvent = async (params, page) => {
 
 }
 
-EventServices.toggleActive = async (params) =>{
+EventServices.toggleActive = async (params) => {
 console.log(`Bareer ${localStorage.getItem("token")}`)
 try{
-  const response = await axios.patch(`${url}/event/toggle-active/${params}`, {
-    headers: {
-      'Authorization': 'Bearer ' + localStorage.getItem("token"),
-      'Content-Type': 'application/json'
-    }
-
-    }) 
+  const response = await axios.patch(`${url}/event/toggle-active/${params}`, {},
+   {headers: {
+    'Authorization': 'Bearer ' + localStorage.getItem("token"),
+    'Content-Type': 'application/json'
+  }}) 
     console.log(response)
 
    
@@ -232,14 +230,11 @@ try{
 EventServices.toggleArchive = async (params) =>{
 
   try{
-    const response = await axios.patch(`${url}/event/toggle-archive/${params}`, {
-      headers: {
-        'Authorization': 'Bearer ' + localStorage.getItem("token"),
-        'Content-Type': 'application/json'
-      }
-
-
-      }) 
+    const response = await axios.patch(`${url}/event/toggle-archive/${params}`, {},
+    {headers: {
+     'Authorization': 'Bearer ' + localStorage.getItem("token"),
+     'Content-Type': 'application/json'
+   }}) 
       console.log(response)
       
      

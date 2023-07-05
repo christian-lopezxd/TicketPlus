@@ -14,23 +14,26 @@ const Card = (props) => {
     console.log(params)
 
 
+    
     const active = () => {
         
-    Swal.fire({
-        title: 'Are you sure you want to change the state of this event?',
-        text: "You'll be able to change it again later",
-        icon: 'warning',
-        showCancelButton: true,
-        confirmButtonColor: '#3085d6',
-        cancelButtonColor: '#d33',
-        confirmButtonText: 'Change it'
-      }).then((result) => {
-        if (result.isConfirmed) {
-          EventServices.toggleActive(params)
+        Swal.fire({
+            title: 'Are you sure you want to change the state of this event?',
+            text: "You'll be able to change it again later",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Toggle active'
+          }).then((result) => {
+            if (result.isConfirmed) {
+              EventServices.toggleArchive(params)
+            }
+          })
+    
         }
-      })
-
-    }
+       
+    
 
     const archive = () => {
         
@@ -41,7 +44,7 @@ const Card = (props) => {
             showCancelButton: true,
             confirmButtonColor: '#3085d6',
             cancelButtonColor: '#d33',
-            confirmButtonText: 'Yes, delete it!'
+            confirmButtonText: 'toggle archive'
           }).then((result) => {
             if (result.isConfirmed) {
               EventServices.toggleArchive(params)
@@ -70,7 +73,7 @@ const Card = (props) => {
            <NavLink to={`/Event/edit/${props.idEvent}`} className="w-[20%] md:w-full" ><button className="bg-newblue hover:bg-darkblue py-4 px-2 rounded font-montserrat text-white font-normal w-full md:py-2">edit</button></NavLink>
             <NavLink to={`/Event/addTiers/${props.idEvent}` } className=" md:w-full"><button className="bg-newblue hover:bg-darkblue py-4 px-2 rounded font-montserrat text-white font-normal w-full md:py-2">add tiers</button></NavLink>
             <NavLink className="w-[20%] md:w-full" onClick={active}><button className="bg-newblue hover:bg-darkblue py-4 px-2 rounded font-montserrat text-white font-normal w-full md:py-2">Activate</button></NavLink>
-            <NavLink className="w-[20%] md:w-full" onClick={archive}><button className="bg-newblue hover:bg-darkblue py-4 px-2 rounded font-montserrat text-white font-normal w-full md:py-2">Store</button></NavLink>
+            <NavLink className="w-[20%] md:w-full" onClick={archive}><button className="bg-newblue hover:bg-darkblue py-4 px-2 rounded font-montserrat text-white font-normal w-full md:py-2">Archive</button></NavLink>
 
            
             </div>
