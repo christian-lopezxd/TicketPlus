@@ -2,7 +2,7 @@ import React from "react";
 
 const TiersCard = (props) => {
     return(
-        <div className="bg-grissoft text-white w-[50%] rounded px-4 py-3 justify-center font-bold text-xl items-center">
+        <div className="bg-grissoft text-white w-[50%] rounded px-4 py-3 justify-center font-bold text-xl items-center md:w-full ">
             <h1>{`Tier name:    ${props.tier}`}</h1>
 
             <h1>{`Tier price:    $${props.price}`}</h1>
