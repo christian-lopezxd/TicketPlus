@@ -1,7 +1,7 @@
 import React from "react";
 import axios from "axios";
 import { useState } from "react";
-const url = "https://162.243.162.41"
+const url = "https://ticketplus.bio"
 
 
 

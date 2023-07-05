@@ -40,7 +40,7 @@ const EventInfo = () => {
   
 
   return (
-    <section className="bg-backgroundicons bg-repeat">
+    <section className="bg-backgroundicons bg-repeat min-h-[100vh]">
 
       <NoAuthNavbar />
       <Banner image={event.bannerPicture}/>

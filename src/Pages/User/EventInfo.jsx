@@ -39,7 +39,7 @@ const EventInfo = () => {
   
 
   return (
-    <section className="bg-backgroundicons bg-repeat">
+    <section className="bg-backgroundicons bg-repeat min-h-[100vh]">
 
       <Navbar />
       <Banner image={event.bannerPicture}/>

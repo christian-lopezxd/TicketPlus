@@ -7,7 +7,9 @@ import { IoHomeOutline } from 'react-icons/io5';
 import { NavLink } from "react-router-dom";
 
 
-const Anchors = (props) => {
+const Anchors = () => {
+
+  const UUID = localStorage.getItem("token")
   return (
 
     <div className="text-white h-full flex text-3xl gap-2 px-1 sm:hidden items-center h-full ">
@@ -24,7 +26,7 @@ const Anchors = (props) => {
          <IoTicketOutline className="hover:bg-black h-full" />
          
       </NavLink>
-      <NavLink to={`/Profile/${props.id}`} className="flex items-center gap-1 hover:bg-black h-full p-3" title="My Profile">
+      <NavLink to={`/Profile/${UUID}`} className="flex items-center gap-1 hover:bg-black h-full p-3" title="My Profile">
 
       <FiUser />
       </NavLink>

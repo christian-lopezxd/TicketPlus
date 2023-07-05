@@ -8,6 +8,7 @@ import CheckEmail from "../Pages/NoAuth/CheckEmail";
 import Verify from "../Pages/NoAuth/Verify";
 import SuccessVerify from "../Pages/NoAuth/successVerify";
 import EventInfo from "../Pages/NoAuth/EventInfo";
+
 const AuthRouter = () =>{
     return (
         <Routes>

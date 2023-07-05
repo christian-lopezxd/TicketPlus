@@ -7,6 +7,7 @@ import NoAuthNavbar from "../../Components/NoAuth/NoAuthNavbar/NoAuthNavbar";
 const url = "./src/Data/Events.json";
 import { useState } from "react";
 import { useEffect } from "react";
+import Carrousel from "../../Components/User/Carrousel/Carrousel";
 
 
 
@@ -20,6 +21,7 @@ const title="Next Events"
   return (
     <section className="bg-backgroundicons bg-repeat">
       <NoAuthNavbar/>
+      <Carrousel />
       <Title title={title}/>
       <CardContainer />
       <Footer />

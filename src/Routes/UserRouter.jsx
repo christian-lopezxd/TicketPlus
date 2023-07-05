@@ -11,12 +11,13 @@ import ReceiveTicket from "../Pages/User/ReceiveTicket";
 import ScanShareTicket from "../Pages/User/ScanShareTicket";
 import Profile from "../Pages/User/Profile";
 import NotFound from "../Pages/NoAuth/NotFound";
+import Events from "../Pages/User/Events";
 
 const UserRouter = () => {
     return (
         <Routes>
             <Route path="/" element={<Lobby/>}></Route>
-            <Route path="/Events" element={<EventInfo/>}></Route>
+            <Route path="/Events" element={<Events/>}></Route>
             <Route path="/Event/:idEvent" element={<EventInfo />}></Route>
             <Route path="/MyTickets" element={<MyTickets/>}></Route>
             <Route path="/BuyTicket/:id" element={<BuyTicket/>}></Route>

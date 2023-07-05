@@ -1,6 +1,6 @@
 import React from "react";
 import axios from "axios";
-const url = "https://162.243.162.41"
+const url = "https://ticketplus.bio"
 
 const EventServices = () => {}
 
@@ -23,6 +23,8 @@ EventServices.getAllActives = async (page) => {
     throw error
 }
 }
+
+
 EventServices.getAll = async (page) => {
 
 
@@ -60,6 +62,7 @@ EventServices.getOne = async (params) => {
     }
 
 }
+
 EventServices.getOneNoAuth = async (params) => {
     try{
         const response = await axios.get(`${url}/guest/event/get-one/${params}`,   {

@@ -8,7 +8,7 @@ import { ImTicket } from 'react-icons/im';
 import { NavLink } from "react-router-dom";
 
 
-const EventInfoCard = (props) => {
+const EventInfoCard = (props) => { 
   return (
     <div className=" flex flex-col w-3/4 h-1/2 bg-white mx-auto my-10 text-justify p-5 font-montserrat font-medium rounded-xl md:w-full ">
       <h1 className="font-bold text-2xl">Description</h1>

@@ -4,7 +4,7 @@ import { IoCalendarClearOutline } from 'react-icons/io5';
 import { IoTicketOutline } from 'react-icons/io5';
 import { FiClock } from 'react-icons/fi';
 import { NavLink } from "react-router-dom";
-const imageURL = "http://162.243.162.41/guest/event/picture/"
+const imageURL = "https://ticketplus.bio/guest/event/picture/"
 
 
 const Card = (props) => {
