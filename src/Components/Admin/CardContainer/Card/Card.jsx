@@ -11,7 +11,7 @@ import EventServices from "../../../../Services/EventServices";
 const Card = (props) => {
 
     const params = props.idEvent;
-    console.log(params)
+   
 
 
     

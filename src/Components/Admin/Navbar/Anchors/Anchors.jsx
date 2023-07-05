@@ -9,7 +9,7 @@ import { NavLink } from "react-router-dom";
 const Anchors = (props) => {
   return (
 
-    <div className="text-white h-full flex text-3xl gap-2 px-1 sm:hidden items-center h-full ">
+    <div className="text-white h-full flex text-3xl md:text-2xl gap-2 px-1 items-center h-full ">
     <div className="flex flex-row gap-5 h-full">
     <NavLink to="/" className="flex items-center gap-1 hover:bg-black h-full px-3" title="Home">
         <IoHomeOutline className=" h-full"/>

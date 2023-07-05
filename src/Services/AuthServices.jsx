@@ -203,5 +203,29 @@ AuthServices.getUserInfo = async() => {
   }
 }
 
+AuthServices.getUserData = async() => {
+  const token = localStorage.getItem("token");
+  const UUID = localStorage.getItem("UUID");
+  try {
+    const response = await axios.get(`${url}/user/get-one/${UUID}`, {
+      headers: {
+        'Authorization': 'Bearer ' + token
+      }
+      
+
+    }) 
+    console.log(response.data)
+    
+    return (response.data)
+    
+  } catch (error) {
+    throw error
+    
+  }
+}
+
+
+
+
 
 export default AuthServices

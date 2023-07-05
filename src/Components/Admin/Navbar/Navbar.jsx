@@ -8,8 +8,8 @@ const Navbar = () => {
  
   return (
 
-    <div className="bg-grissoft h-20 flex justify-between px-2 items-center sticky top-[0] z-[99]">
-      <NavLink to="/"> <p className="text-white font-lilita text-5xl">Ticketplus</p> </NavLink >
+    <div className="bg-grissoft h-20 flex justify-between px-2 items-center sticky top-[0] z-[99] ">
+      <NavLink to="/"> <p className="text-white font-lilita text-5xl md:text-2xl">Ticketplus</p> </NavLink >
 
       <Anchors />
 
