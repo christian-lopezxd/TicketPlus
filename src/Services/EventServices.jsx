@@ -1,6 +1,6 @@
 import React from "react";
 import axios from "axios";
-const url = "http://162.243.162.41"
+const url = "https://162.243.162.41"
 
 const EventServices = () => {}
 
